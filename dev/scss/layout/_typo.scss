@@ -1,0 +1,82 @@
+$font-size-default: rem-calc(14);
+$font-size-small: rem-calc(12);
+$font-size-big: rem-calc(14);
+$alignPag:rem-calc(5);
+$align-left:rem-calc(5);
+$spazioFoto: rem-calc(4);
+$nero:#000;
+$grigio:#f1f1f1;
+$bianco:#fff;
+
+a:hover {
+    text-decoration: none;
+    color: #1ed760;
+  }
+a {
+    color: white;
+    text-decoration: none;
+}
+.small{
+    font-size: $font-size-small;
+}
+.big{ 
+    font-size: $font-size-big;  
+}
+p, span{
+    font-size: $font-size-default;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.bold{
+    font-weight: 700;
+}
+.selezioneFiltro{
+    letter-spacing: 1px;
+    font-size: rem-calc(12);
+}
+.nomeProdotto{
+    margin: 33px 0 15px;
+    padding: 0 5px;
+}
+nav{
+    position: static;
+    & li, & ul{
+        line-height: 1;
+    }
+}
+  footer{
+      & h3{
+        color: #919496;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 700;
+      }
+  }
+.titFiltri{
+    display: block;
+    letter-spacing: 0.5px;
+    padding: 20px $alignPag;
+} 
+.listaFiltri{
+    & ul{
+        list-style: none;
+        margin:0px $alignPag;
+        
+    }
+    & ul li a{
+        color: $nero;
+    }
+}
+.listMarginTop{
+    margin-top: 10px;
+}
+.listMarginBottom{
+    margin-bottom: 10px;
+}
+.listRegular{
+    margin-left: 12px;
+}

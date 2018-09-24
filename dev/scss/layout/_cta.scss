@@ -1,0 +1,118 @@
+$alignPag:rem-calc(5);
+$align-left:rem-calc(5);
+$spazioFoto: rem-calc(4);
+$nero:#000;
+$grigio:#f1f1f1;
+$bianco:#fff;
+li div .lineaMenu{
+    width: 100%;
+    height: 2px;
+    margin:20px 0;
+    background-color: #fff;
+    display: none;
+  }
+span .titNav{
+    text-transform:uppercase;
+    color: white;
+    display: none;
+    font-size: 3em;
+    margin: 10px 7px;
+  }
+
+body{
+    overflow-x: hidden;
+}
+.button{
+    text-transform: uppercase;
+    & div:hover{
+        color:white;
+        background-color: $nero;
+    }
+}
+.button:hover{
+    color:$nero;
+    background-color: $grigio;
+    border: $nero 1px solid;
+}
+.align-pag
+{
+    padding: $alignPag;
+}
+.prodotti {
+    & img{
+    padding: $alignPag;
+}
+} 
+.LaneFilter{
+    width: 80%;
+    height: 1px;
+    background-color: $nero;
+    margin: 30px 0;
+}
+.taglie{
+    list-style: none;
+}
+.breadcrump {
+    background-color: $grigio;
+    padding: 13px 5px;
+    margin-top:-12px;
+    width: 100%; 
+    & a{
+        text-decoration: underline;
+        color:$nero;
+    }
+    & a:hover{
+        text-decoration: none;
+    }
+}
+.active{
+    font-weight: 700;
+}
+.search-result{
+    margin:30px 0;
+}
+.ordina{
+    margin: 11px 0 38px;
+    padding:0 4px;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.product-card{
+    position: relative;
+    img{
+    transition: opacity .35s ease-out;
+    }
+    
+    .product-image{
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+    .product-img-hover
+    {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &:hover{
+        .product-image{
+            opacity: 0;
+            pointer-events: all;
+            position: absolute;
+            top:0px;
+        }
+        .product-img-hover{
+           opacity: 1;
+        }
+    }
+}
+.newsLetter{
+    background-color: $grigio;
+    padding:50px 0;
+    margin-bottom:20px;
+}
+.grid-x{
+    width: 100%;
+}
