@@ -10,7 +10,7 @@ $bianco:#fff;
 
 a:hover {
     text-decoration: none;
-    color: blue;
+    color: #1ed760;
   }
 a {
     color: white;
@@ -43,7 +43,7 @@ p, span{
     padding: 0 5px;
 }
 nav{
-    position: static;
+    position: fixed;
     & li, & ul{
         line-height: 1;
     }
